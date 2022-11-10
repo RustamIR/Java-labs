@@ -23,7 +23,7 @@ class Task_1 {
     
     public int substract(int n) {
       if (n == 0) {
-        return one;
+        return n;
       }
 	    //методы сложения add(Int n) и вычитания substract(Int n)	
       

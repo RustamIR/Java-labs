@@ -1,8 +1,18 @@
-class Task_1 {
+class Task1 {
     private int one;
+
+    // public Task1(){
+    //   one = 0;
+    // }
+
+    // public Task1(Task1 one){
+
+    //   this.one = one;
+    // }
+    
     
     public int decrement() {
-        return --one;
+      return --one;
     }
 
 	  public int increment() {
@@ -15,18 +25,19 @@ class Task_1 {
       if (n == 0) {
         return one;
       }
+
       else {
         increment();
         return add(--n);
       }
     }
-    
+
     public int substract(int n) {
       if (n == 0) {
-        return n;
+        return one;
       }
-	    //методы сложения add(Int n) и вычитания substract(Int n)	
-      
+	    //методы сложения add(Int n) и вычитания substract(Int n)
+
 	else {
         decrement();
         return substract(--n);
@@ -39,7 +50,7 @@ class Task_1 {
     }
     
     public static void main(String[] args) {
-        Task_1 numObj = new Task_1();
+        Task1 numObj = new Task1();
         System.out.println(numObj.increment());
         System.out.println(numObj.decrement());
         System.out.println(numObj.add(50));

@@ -2,7 +2,7 @@ import java.util.Scanner;
 import static java.lang.System.out;
 
 
-public class Task_3 {
+public class Task3 {
     public static void main(String args[]){
         int N;
         int M;
@@ -25,6 +25,7 @@ public class Task_3 {
         out.println("Колличество строк матрицы " + A +" колличество столбцов " + B + ", матрица 2:");
 
         out.println(matrix2);
+
         scanner.close();
 
         // boolean allEqual = true;
@@ -110,23 +111,25 @@ class Matrix3{
         }
         return str;
     }
+    
 }
 
-class SquareMatrix{
+// class SquareMatrix extends Matrix3{
 
-
-    // Matrix3 sum(Matrix3 matrix){
-    //     Matrix3 sum_m = new Matrix3(N, M);
-
-    //     for (int i = 0; i < N; i++){
-    //         for (int j = 0; j < M; j++){
-    //             sum_m[i][j] = this.matrix[i][j] + matrix.getElement(i, j); 
-    //         }
-    //     }
-    //     return sum_m;
-    // }
-
-}
+//     public SquareMatrix(int N, int M, int[][] matrix){
+//         public boolean equal(Matrix m) {
+//             Matrix3 m = new Matrix3(N, M);
+// 		// TODO: Test whether two matrices are equal
+// 		// Return true/false
+//             for(int r = 0; r != this.N; r++) {
+//                 for(int c = 0; c != this.M; c++) {
+//                     if (m[N][M] != this.myMatrix[r][c]) return false;
+//                 } 
+//             }
+//             return true;
+//         }
+//     }
+// }
 
 
 // public class MatrixException extends Exception {

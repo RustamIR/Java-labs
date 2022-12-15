@@ -55,7 +55,26 @@ public class Matrix2 {
             }
             return prod_m;
         }
-    
+
+
+        // public static Matrix2 transposeMatrix(){
+        //     Matrix2 temp = new double[N[0].length][M.length];
+        //     for (int i = 0; i < m.length; i++)
+        //         for (int j = 0; j < m[0].length; j++)
+        //             temp[j][i] = m[i][j];
+        //     return temp;
+        // }
+
+        // public Matrix2 revert(){
+        //     Matrix2 mat = new Matrix2(N, M);
+        //     for(int i = 0; i < N; i++) {
+        //         for(int j = 0; j < M; j++){
+        //             mat[i][j] = 
+        //         }
+        //     }
+
+        // }
+
         public String toString() {
     
             StringBuilder str = new StringBuilder();

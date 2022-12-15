@@ -9,7 +9,7 @@ class Task2 {
         out.println("Единичная матрица");
         out.println(matrix);
 
-        Matrix2 matrix2 = new Matrix2(2, 2);
+        Matrix2 matrix2 = new Matrix2(2, 2); 
         out.println("Единичная матрица");
         matrix2.setElement(0, 0, 1);
         matrix2.setElement(1, 0, 0);
@@ -35,7 +35,5 @@ class Task2 {
 			matrix2 = matrix2.product(copy);
 			out.println("matrix^" + (i + 1) + ": \n" + matrix2.toString());
 		}
-
-    }   
-    
+    }
 }

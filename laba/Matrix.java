@@ -1,6 +1,5 @@
 package matrixes;
 import exceptions.*;
-
 public class Matrix {
 	protected int [][]mtx;
 	protected int width;

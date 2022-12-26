@@ -5,7 +5,7 @@ public abstract class AbstractMatrix implements IMatrix {
     protected int n;
     protected int m;
 
-    public AbstractMatrix(int n, int m) {
+    protected AbstractMatrix(int n, int m) {
         this.n = n;
         this.m = m;
     }
@@ -30,30 +30,21 @@ public abstract class AbstractMatrix implements IMatrix {
     }
 
     public String toString() {
-        String str = "";
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                str += this.getElement(i, j) + " ";
-            }
-            str += "\n";
-        }
+    
+        StringBuilder str = new StringBuilder();
 
-        return str;
+        for(int i = 0; i < n; i++) {
+            str.append("[ ");
+            for(int j = 0; j < m; j++) {
+                str.append(getElement(i, j));
+                str.append(" ");
+            }
+            str.append(" ]\n");
+        }
+        return str.toString();
     }
 
-    // public boolean equals(AbstractMatrix AbstractMatrix) {
-    //     if (this.n != AbstractMatrix.getRowSize() && this.m != AbstractMatrix.getColumnSize())
-    //         return false;
 
-    //     for (int i = 0; i < n; i++) {
-    //         for (int j = 0; j < m; j++) {
-    //             if (this.getElement(i, j) != AbstractMatrix.getElement(i, j))
-    //                 return false;
-    //         }
-    //     }
-
-    //     return true;
-    // }
 
     public boolean equals(Object obj) {
 		if (this == obj)
